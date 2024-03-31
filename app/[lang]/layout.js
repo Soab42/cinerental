@@ -8,7 +8,7 @@ export const metadata = {
   description: "Cine Rental project by Learn with Sumit",
 };
 
-export default function RootLayout({ children }) {
+export default function RootLayout({ children, modal }) {
   return (
     <html lang="en">
       <head>
@@ -24,6 +24,7 @@ export default function RootLayout({ children }) {
         <main className="pt-24">
           <div className="container grid lg:grid-cols-[218px_1fr] gap-[3.5rem] relative">
             <SideBar />
+            {modal}
             {children}
           </div>
         </main>
