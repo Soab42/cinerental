@@ -1,21 +1,34 @@
 import { getMovie } from "@/lib/getMovies";
+import Image from "next/image";
+import { notFound } from "next/navigation";
 import React from "react";
 
 export default async function SingleMoviePage({ params: { id } }) {
   const movie = await getMovie(id);
+
+  if (!movie) {
+    return notFound();
+  }
   return (
     <section>
       <div>
-        <img
+        <Image
           className="w-full object-cover max-h-[300px] lg:max-h-[500px]"
           src={movie?.backdrop_path}
           alt={movie.title}
+          height={1200}
+          width={1900}
         />
       </div>
 
       <div className="grid grid-cols-12 py-12 gap-8">
         <div className="col-span-2">
-          <img src={movie?.poster_path} alt={movie?.title} />
+          <Image
+            src={movie?.poster_path}
+            alt={movie?.title}
+            height={720}
+            width={460}
+          />
         </div>
         <div className="col-span-8">
           <h2 className="font-bold text-slate-300 text-2xl">{movie?.title}</h2>

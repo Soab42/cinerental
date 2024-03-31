@@ -35,14 +35,14 @@ export default function Modal({ children }) {
   return (
     <div
       ref={overlay}
-      className="fixed z-50 left-0 right-0 top-0 bottom-0 mx-auto bg-black/40 p-10"
+      className="fixed z-50 left-0 right-0 top-0 bottom-0 mx-auto bg-black/40 backdrop-blur-sm p-10"
       onClick={onClick}
     >
       <div
         ref={wrapper}
         className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 sm:w-10/12 md:w-8/12 lg:w-3/5 p-6 "
       >
-        <div className=" backdrop-blur-md  shadow-md shadow-black/10 p-3 fade-in">
+        <div className=" backdrop-blur-xl  shadow-md shadow-black/10 p-3 ">
           {children}
         </div>
       </div>

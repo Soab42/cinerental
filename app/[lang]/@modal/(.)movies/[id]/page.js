@@ -7,20 +7,26 @@ export default async function SinglePhotoPage({ params: { id } }) {
   const movie = await getMovie(id);
   return (
     <Modal>
-      <section>
+      <section className="fade-in">
         <div>
           <Image
-            className="w-full object-cover max-h-[300px] lg:max-h-[500px] bg-gradient-to-b from-black via-slate-500 to-black-"
+            className="w-full object-cover max-h-[300px] lg:max-h-[500px] image-loader"
             src={movie?.backdrop_path}
             alt={movie.title}
-            width={500}
-            height={500}
+            width={1900}
+            height={1200}
           />
         </div>
 
         <div className="grid grid-cols-12 py-12 gap-8">
           <div className="col-span-2">
-            <img src={movie?.poster_path} alt={movie?.title} />
+            <Image
+              width={500}
+              height={500}
+              src={movie?.poster_path}
+              alt={movie?.title}
+              className="image-loader"
+            />
           </div>
           <div className="col-span-8">
             <h2 className="font-bold text-slate-300 text-2xl">
