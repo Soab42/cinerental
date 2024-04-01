@@ -2,7 +2,7 @@ import Image from "next/image";
 import Link from "next/link";
 import React from "react";
 
-export default function Movie({ movie }) {
+export default function Movie({ movie, dictionary }) {
   return (
     <figure className="p-4 border border-black/10 shadow-sm dark:border-white/10 rounded-xl flex flex-col justify-between">
       <Image
@@ -27,7 +27,7 @@ export default function Movie({ movie }) {
           className="bg-primary rounded-lg py-2 px-5 flex items-center justify-center gap-2 text-[#171923] font-semibold text-sm"
         >
           <Image height={20} width={20} src="/assets/tag.svg" alt="icon" />
-          <span>Details</span>
+          <span>{dictionary.details}</span>
         </Link>
       </figcaption>
     </figure>

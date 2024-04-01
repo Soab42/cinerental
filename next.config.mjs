@@ -8,6 +8,9 @@ const nextConfig = {
       {
         hostname: "i.pravatar.cc",
       },
+      {
+        hostname: "https://upload.wikimedia.org/",
+      },
     ],
   },
 };

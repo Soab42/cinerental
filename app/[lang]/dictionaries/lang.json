@@ -1,0 +1,62 @@
+{
+  "trending": {
+    "en": "Trending",
+    "bn": "ট্রেন্ডিং"
+  },
+  "newRelease": {
+    "en": "New Releases",
+    "bn": "নতুন মুক্তি পেয়েছে"
+  },
+  "comingSoon": {
+    "en": "Coming Soon",
+    "bn": "শীঘ্রই আসছে"
+  },
+  "favourites": {
+    "en": "Favorites",
+    "bn": "প্রিয়"
+  },
+  "watchLater": {
+    "en": "Watch Later",
+    "bn": "পরে দেখুন"
+  },
+  "details": {
+    "en": "Details",
+    "bn": "বিস্তারিত"
+  },
+  "footer": {
+    "en": "Copyright ©2023 | All rights reserved by Learn with Sumit",
+    "bn": "কপিরাইট © ২০২৩ | সমস্ত অধিকার সংরক্ষিত লার্ন উইথ সুমিত দ্বারা"
+  },
+  "Release Date": {
+    "en": "Release Date",
+    "bn": "মুক্তিপ্রাপ্তির তারিখ"
+  },
+  "AverageVote": {
+    "en": "Average Vote",
+    "bn": "গড় ভোট"
+  },
+  "VoteCount": {
+    "en": "Vote Count",
+    "bn": "ভোটের সংখ্যা"
+  },
+  "Popularity": {
+    "en": "Popularity",
+    "bn": "জনপ্রিয়তা"
+  },
+  "streamInHd": {
+    "en": "Stream in HD",
+    "bn": "এইচডি দিয়ে স্ট্রিম করুন"
+  },
+  "DownloadInHD": {
+    "en": "Download in HD",
+    "bn": "এইচডি তে ডাউনলোড করুন"
+  },
+  "notFoundGlobal": {
+    "en": "This requested page was not found! Go back to Home Page",
+    "bn": "এই অনুরোধিত পৃষ্ঠাটি খুঁজে পাওয়া যায়নি! হোম পেজে ফিরে যান"
+  },
+  "notFoundMovie": {
+    "en": "This movie with id was not found! Go back to All Movies page",
+    "bn": "এই আইডিসহ চলচ্চিত্রটি খুঁজে পাওয়া যায়নি! সমস্ত চলচ্চিত্র পৃষ্ঠায় ফিরে যান"
+  }
+}
