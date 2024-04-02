@@ -1,17 +1,16 @@
 "use client";
-import { useParams, usePathname, useRouter } from "next/navigation";
+import { useParams, useRouter } from "next/navigation";
 import Image from "next/image";
 import React, { useState } from "react";
 
 export default function LanguageSwitcher() {
   const router = useRouter();
   const { lang } = useParams();
-  const path = usePathname();
   const [isOpen, setIsOpen] = useState(false);
 
   const handleChange = (newLang) => {
-    const newPath = path.replace(/^\/\w+/, `/${newLang}`); // Replace the language code
-    router.push(newPath); // Push the new path to the router
+    // Replace the language code
+    router.push(`/${newLang}`); // Push the new path to the router
     setIsOpen(false); // Close any open dropdown or menu
   };
 

@@ -6,7 +6,6 @@ import { getDictionary } from "../../dictionary";
 
 export default async function SingleMoviePage({ params: { id, lang } }) {
   const movie = await getMovie(id);
-  console.log(movie);
   const dictionary = await getDictionary(lang);
   if (!movie) {
     return notFound();

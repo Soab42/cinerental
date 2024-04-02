@@ -1,10 +1,13 @@
 import { getDictionary } from "@/app/[lang]/dictionary";
 import Modal from "@/components/Modal";
+import SliderNavigation from "@/components/SliderNavigation";
 import { getMovie } from "@/lib/getMovies";
 import Image from "next/image";
 import React from "react";
 
-export default async function SinglePhotoPage({ params: { id, lang } }) {
+export default async function SingleParallelMoviePage({
+  params: { id, lang },
+}) {
   const movie = await getMovie(id);
   const dictionary = await getDictionary(lang);
   return (
@@ -60,6 +63,7 @@ export default async function SinglePhotoPage({ params: { id, lang } }) {
           </div>
         </div>
       </section>
+      <SliderNavigation />
     </Modal>
   );
 }

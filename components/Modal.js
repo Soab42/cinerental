@@ -8,7 +8,9 @@ export default function Modal({ children }) {
   const router = useRouter();
 
   const onDismiss = useCallback(() => {
-    router.back();
+    // router.back();
+    router.push("/");
+    // window.location.href = "/";
   }, [router]);
 
   const onClick = useCallback(
@@ -40,7 +42,7 @@ export default function Modal({ children }) {
     >
       <div
         ref={wrapper}
-        className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 sm:w-10/12 md:w-8/12 lg:w-3/5 p-6"
+        className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 sm:w-10/12 md:w-8/12 lg:w-3/5 p-6 "
       >
         <div className=" backdrop-blur-xl  shadow-md shadow-black/10 p-3  bg-slate-950/60">
           {children}

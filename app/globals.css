@@ -14,10 +14,12 @@
 
 @keyframes fadeIn {
   0% {
-    opacity: 0;
-    scale: 0;
+    opacity: 0.5;
+    scale: 0.9;
+    transform: translateX(10px);
   }
   100% {
+    transform: translateX(0);
     opacity: 1;
     scale: 1;
   }
