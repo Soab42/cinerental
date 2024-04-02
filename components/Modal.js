@@ -10,6 +10,7 @@ export default function Modal({ children }) {
   const onDismiss = useCallback(() => {
     // router.back();
     router.push("/");
+    router.refresh();
     // window.location.href = "/";
   }, [router]);
 
