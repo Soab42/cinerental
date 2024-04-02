@@ -14,7 +14,7 @@ export async function PATCH(req, { params }) {
   const requestBody = await req.json();
 
   const movieToUpdateIndex = movieList.results.findIndex((movie) => {
-    return movie.id.toLocaleString() === movieId;
+    return movie.id == movieId;
   });
 
   if (movieToUpdateIndex === -1) {
@@ -35,9 +35,7 @@ export async function PATCH(req, { params }) {
 export async function DELETE(req, { params }) {
   const movieId = params?.id;
 
-  const index = movieList.results.findIndex(
-    (movie) => movie.id.toLocaleString() === movieId
-  );
+  const index = movieList.results.findIndex((movie) => movie.id == movieId);
   const movieToDelete = movieList.results[index];
 
   // If movie with the specified ID is not found, return an error response
