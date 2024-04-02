@@ -9,18 +9,31 @@
 }
 
 .fade-in {
-  animation: fadeIn 0.5s cubic-bezier(0.39, 0.575, 0.565, 1) forwards;
+  animation: fadeIn 1s cubic-bezier(0.39, 0.575, 0.565, 1) forwards;
 }
 
 @keyframes fadeIn {
   0% {
     opacity: 0.5;
-    scale: 0.9;
+    transform: translateX(-10px);
+  }
+  100% {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+.fade-out {
+  animation: fadeout 1s cubic-bezier(0.39, 0.575, 0.565, 1) forwards;
+}
+
+@keyframes fadeout {
+  0% {
+    opacity: 0.5;
     transform: translateX(10px);
   }
   100% {
     transform: translateX(0);
     opacity: 1;
-    scale: 1;
   }
 }

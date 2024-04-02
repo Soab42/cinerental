@@ -1,18 +1,17 @@
 "use client";
-import { useRouter } from "next/navigation";
+import { useParams, useRouter } from "next/navigation";
 import { useCallback, useEffect, useRef } from "react";
 
 export default function Modal({ children }) {
   const overlay = useRef(null);
   const wrapper = useRef(null);
   const router = useRouter();
+  const { lang } = useParams();
 
   const onDismiss = useCallback(() => {
-    // router.back();
-    router.push("/");
+    router.push(`/${lang}`);
     router.refresh();
-    // window.location.href = "/";
-  }, [router]);
+  }, [router, lang]);
 
   const onClick = useCallback(
     (e) => {

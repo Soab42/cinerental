@@ -12,10 +12,10 @@ export default async function SingleParallelMoviePage({
   const dictionary = await getDictionary(lang);
   return (
     <Modal>
-      <section className="fade-in">
-        <div>
+      <section className="">
+        <div className="fade-out">
           <Image
-            className="w-full object-cover max-h-[300px] lg:max-h-[500px] image-loader"
+            className="w-full object-cover max-h-[300px] lg:max-h-[500px] image-loader "
             src={movie?.backdrop_path}
             alt={movie.title}
             height={1200}
@@ -23,7 +23,7 @@ export default async function SingleParallelMoviePage({
           />
         </div>
 
-        <div className="grid grid-cols-12 py-12 gap-8">
+        <div className="grid grid-cols-12 py-12 gap-8 ">
           <div className="col-span-2">
             <Image
               src={movie?.poster_path}
@@ -33,7 +33,7 @@ export default async function SingleParallelMoviePage({
               className="image-loader"
             />
           </div>
-          <div className="col-span-8">
+          <div className="col-span-8 fade-in">
             <h2 className="font-bold text-slate-300 text-2xl">
               {movie?.title}
             </h2>
