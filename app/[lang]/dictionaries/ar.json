@@ -1,0 +1,26 @@
+{
+  "trending": "الشائع",
+  "newRelease": "الإصدارات الجديدة",
+  "comingSoon": "قريباً",
+  "favourites": "المفضلة",
+  "watchLater": "مشاهدة لاحقاً",
+  "details": "تفاصيل",
+  "footer": "حقوق النشر ©2023 | جميع الحقوق محفوظة من قبل تعلم مع سُمِّيت",
+  "releaseDate": "تاريخ الإصدار",
+  "averageVote": "التصويت المتوسط",
+  "voteCount": "عدد التصويتات",
+  "popularity": "الشعبية",
+  "streamInHd": "البث بجودة عالية",
+  "downloadInHD": "تحميل بجودة عالية",
+  "notFoundGlobal": {
+    "message": "الصفحة المطلوبة غير موجودة!",
+    "btnName": "الصفحة الرئيسية",
+    "message2": " العودة إلى "
+  },
+  "notFoundMovie": {
+    "message1": "لم يتم العثور على هذا الفيلم برقم الهوية ",
+    "message2": "!",
+    "message3": "العودة إلى ",
+    "btnName": "صفحة جميع الأفلام"
+  }
+}

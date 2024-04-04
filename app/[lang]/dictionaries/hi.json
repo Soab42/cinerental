@@ -1,0 +1,26 @@
+{
+  "trending": "ट्रेंडिंग",
+  "newRelease": "नई रिलीज़",
+  "comingSoon": "जल्द आ रहा है",
+  "favourites": "पसंदीदा",
+  "watchLater": "बाद में देखें",
+  "details": "विवरण",
+  "footer": "कॉपीराइट ©2023 | सभी अधिकार सुमित के साथ सीखें द्वारा सुरक्षित हैं",
+  "releaseDate": "रिलीज़ तिथि",
+  "averageVote": "औसत वोट",
+  "voteCount": "वोटों की संख्या",
+  "popularity": "लोकप्रियता",
+  "streamInHd": "HD में स्ट्रीम करें",
+  "downloadInHD": "HD में डाउनलोड करें",
+  "notFoundGlobal": {
+    "message": "यह अनुरोधित पृष्ठ नहीं मिला!",
+    "btnName": "होम पेज",
+    "message2": " वापस जाएं "
+  },
+  "notFoundMovie": {
+    "message1": "इस फिल्म को ",
+    "message2": " आईडी के साथ नहीं मिला!",
+    "message3": "वापस जाएं ",
+    "btnName": "सभी फिल्मों का पेज"
+  }
+}

@@ -1,0 +1,26 @@
+{
+  "trending": "热门趋势",
+  "newRelease": "新发布",
+  "comingSoon": "即将推出",
+  "favourites": "收藏",
+  "watchLater": "稍后观看",
+  "details": "详情",
+  "footer": "版权 ©2023 | 由Learn with Sumit保留所有权利",
+  "releaseDate": "发布日期",
+  "averageVote": "平均评分",
+  "voteCount": "投票数",
+  "popularity": "受欢迎程度",
+  "streamInHd": "高清播放",
+  "downloadInHD": "高清下载",
+  "notFoundGlobal": {
+    "message": "未找到请求的页面！",
+    "btnName": "首页",
+    "message2": " 返回 "
+  },
+  "notFoundMovie": {
+    "message1": "未找到此影片，ID为",
+    "message2": "！",
+    "message3": "返回所有电影页面",
+    "btnName": "返回"
+  }
+}
