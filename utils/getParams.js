@@ -1,11 +1,13 @@
 export async function getParams(headers) {
   try {
-    const headersList = headers();
-    const params = headersList.get("x-params");
-    const { lang, id } = JSON.parse(params);
+    const headersObject = headers(); // Call the function to obtain headers object
+    const params = headersObject.get("x-params");
     if (!params) {
       throw new Error("x-params header not found");
     }
+    const { lang, id } = JSON.parse(params);
+
+    // Simulate an asynchronous operation (e.g., fetching from a database)
     return new Promise((resolve) =>
       setTimeout(() => {
         resolve({ lang, id });
