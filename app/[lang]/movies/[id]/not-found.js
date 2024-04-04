@@ -1,22 +1,23 @@
-"use client";
+import { getParams } from "@/utils/getParams";
+import { headers } from "next/headers";
 import Link from "next/link";
-import { useParams } from "next/navigation";
+import { getDictionary } from "../../dictionary";
 
-export default function NotFound() {
-  const { id } = useParams();
+export default async function NotFound() {
+  const { id, lang } = await getParams(headers);
+  const { notFoundMovie } = await getDictionary(lang);
   return (
     <div className="flex flex-col items-center justify-center h-[70vh] gap-10 text-2xl">
       <h2 className="text-3xl">
-        This movie with <span className="text-emerald-400">{id}</span> id was
-        not found!
+        {notFoundMovie.message1} <span className="text-emerald-400">{id}</span>{" "}
+        {notFoundMovie.message2}
       </h2>
 
       <p>
-        Go back to
+        {notFoundMovie.message3}
         <Link href="/" className="p-2 text-black rounded-md mx-2 bg-primary">
-          All Movies
+          {notFoundMovie.btnName}
         </Link>
-        page
       </p>
     </div>
   );

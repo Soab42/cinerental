@@ -1,8 +1,11 @@
-"use client";
+import { getParams } from "@/utils/getParams";
+import { headers } from "next/headers";
 import Link from "next/link";
-import { useParams } from "next/navigation";
+import { getDictionary } from "./dictionary";
 
-export default function NotFound() {
+export default async function NotFound() {
+  const { lang } = await getParams(headers);
+  const { notFoundGlobal } = await getDictionary(lang);
   return (
     <div className="flex flex-col items-center justify-center h-[70vh] gap-10 text-2xl">
       <h2 className="text-3xl">This requested page was not found!</h2>

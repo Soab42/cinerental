@@ -17,7 +17,7 @@ export default async function SingleParallelMoviePage({
           <Image
             className="w-full object-cover max-h-[300px] lg:max-h-[500px] image-loader "
             src={movie?.backdrop_path}
-            alt={movie.title}
+            alt={movie?.title}
             height={1200}
             width={1900}
           />

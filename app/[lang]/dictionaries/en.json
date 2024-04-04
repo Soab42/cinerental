@@ -13,12 +13,14 @@
   "streamInHd": "Stream in HD",
   "downloadInHD": "Download in HD",
   "notFoundGlobal": {
-    "message": "This requested page was not found! Go back to ",
-    "btnName": "Home Page"
+    "message": "This requested page was not found!",
+    "btnName": "Home Page",
+    "message2": " Go back to "
   },
   "notFoundMovie": {
     "message1": "This movie with ",
-    "message2": "id was not found! Go back to",
+    "message2": "id was not found! ",
+    "message3": "Go back to ",
     "btnName": "All Movies page"
   }
 }
