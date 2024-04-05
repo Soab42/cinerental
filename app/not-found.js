@@ -16,11 +16,10 @@ export default async function NotFound() {
       <h2 className="text-3xl">{notFoundGlobal.message}</h2>
 
       <p>
-        {notFoundGlobal.message2}
-
         <Link href="/" className="p-2 text-black rounded-md mx-2 bg-primary">
           {notFoundGlobal.btnName}
         </Link>
+        {notFoundGlobal.message2}
       </p>
     </div>
   );
