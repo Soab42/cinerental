@@ -11,7 +11,7 @@ export async function getParams(headers) {
     return new Promise((resolve) =>
       setTimeout(() => {
         resolve({ lang, id });
-      }, 1000)
+      }, 500)
     );
   } catch (error) {
     console.error("Error parsing x-params header:", error.message);
