@@ -22,7 +22,7 @@ export default function SliderNavigation() {
     router.push(`/${lang}/movies/${nextId}`);
   };
   return (
-    <div className="flex justify-between absolute w-full left-0 top-[30%] px-5 opacity-20 hover:opacity-80 duration-500">
+    <div className="flex justify-between absolute w-full left-0 top-[40%] px-5 opacity-20 hover:opacity-80 duration-500">
       <button onClick={() => handleClick(-1)}>
         <Image
           width={50}

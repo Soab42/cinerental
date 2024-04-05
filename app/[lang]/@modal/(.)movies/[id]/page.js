@@ -13,14 +13,15 @@ export default async function SingleParallelMoviePage({
   return (
     <Modal>
       <section className="">
-        <div className="fade-out">
+        <div className=" relative">
           <Image
-            className="w-full object-cover max-h-[300px] lg:max-h-[500px] image-loader "
+            className="w-full object-cover max-h-[300px] lg:max-h-[500px] image-loader fade-out"
             src={movie?.backdrop_path}
             alt={movie?.title}
             height={1200}
             width={1900}
           />
+          <SliderNavigation />
         </div>
 
         <div className="grid grid-cols-12 py-12 gap-8 ">
@@ -63,7 +64,6 @@ export default async function SingleParallelMoviePage({
           </div>
         </div>
       </section>
-      <SliderNavigation />
     </Modal>
   );
 }
