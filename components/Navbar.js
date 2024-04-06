@@ -3,11 +3,11 @@ import Link from "next/link";
 import React from "react";
 import LanguageSwitcher from "./LanguageSwitcher";
 
-export default function Navbar() {
+export default function Navbar({ lang }) {
   return (
     <header className="fixed w-full z-50 bg-inherit">
       <nav className="container flex items-center justify-between space-x-10 py-6">
-        <Link href="/">
+        <Link href={`/${lang}`}>
           <Image src="/assets/logo.svg" width="139" height="26" alt="" />
         </Link>
         <ul className="flex items-center space-x-5">

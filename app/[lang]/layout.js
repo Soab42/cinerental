@@ -12,7 +12,7 @@ export default async function MoviesLayout({
   const dictionary = await getDictionary(lang);
   return (
     <>
-      <Navbar dictionary={dictionary} />
+      <Navbar lang={lang} />
       <main className="pt-24">
         <div className="container grid lg:grid-cols-[218px_1fr] gap-[3.5rem] relative">
           <SideBar dictionary={dictionary} />
