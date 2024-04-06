@@ -25,7 +25,6 @@ export default function LanguageSwitcher() {
     );
     setActiveLang(currentLanguage);
   }, [lang]);
-  console.log(activeLang);
   return (
     <div className="relative inline-block">
       <button

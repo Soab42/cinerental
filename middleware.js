@@ -25,23 +25,18 @@ export function middleware(request) {
     );
   }
   const requestHeaders = new Headers(request.headers);
-  // requestHeaders.set("x-hello-from-middleware1", "hi");
 
-  // You can also set request headers in NextResponse.rewrite
   const response = NextResponse.next({
     request: {
-      // New request headers
       headers: requestHeaders,
     },
   });
 
-  // Set a new response header `x-hello-from-middleware2`
   // Set a new response header `x-params`
   response.headers.set(
     "x-params",
     JSON.stringify(extractParamsFromURL(pathname))
   );
-  // console.log(response.headers);
 
   return response;
 }

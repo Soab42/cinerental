@@ -8,7 +8,6 @@ import React from "react";
 export default function SliderNavigation() {
   const { id, lang } = useParams();
   const router = useRouter();
-  // console.log(movies);
   const handleClick = async (value) => {
     const movies = await getMovies();
     const currentIndex = movies.findIndex((m) => m.id == id);
