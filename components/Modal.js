@@ -9,7 +9,7 @@ export default function Modal({ children }) {
   const { lang } = useParams();
 
   const onDismiss = useCallback(() => {
-    router.push(`/${lang}`);
+    router.push(`/${lang}`, { scroll: false });
     router.refresh();
   }, [router, lang]);
 

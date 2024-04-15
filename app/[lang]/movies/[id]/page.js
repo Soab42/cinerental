@@ -22,7 +22,7 @@ export default async function SingleMoviePage({ params: { id, lang } }) {
         />
       </div>
 
-      <div className="grid grid-cols-12 py-12 gap-8">
+      <div className="grid grid-cols-12 py-12 gap-8 ">
         <div className="col-span-2">
           <Image
             src={movie?.poster_path}
@@ -32,7 +32,7 @@ export default async function SingleMoviePage({ params: { id, lang } }) {
             className="image-loader"
           />
         </div>
-        <div className="col-span-8">
+        <div className="xl:col-span-8 col-span-10 fade-in">
           <h2 className="font-bold text-slate-300 text-2xl">{movie?.title}</h2>
           <p className="my-2 text-slate-400 italic">{movie?.overview}</p>
           <ul className="text-slate-300 space-y-2 my-8">
@@ -50,7 +50,7 @@ export default async function SingleMoviePage({ params: { id, lang } }) {
             </li>
           </ul>
         </div>
-        <div className="col-span-2 space-y-4">
+        <div className="xl:col-span-2 col-span-12 xl:space-y-4 xl:space-x-0 space-x-3 order-first xl:order-last flex xl:inline text-sm xl:text-md">
           <button className="py-2 w-full bg-primary font-medium text-slate-800 rounded-md">
             {dictionary.streamInHd}
           </button>

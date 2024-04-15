@@ -24,6 +24,7 @@ export default function Movie({ movie, dictionary, lang }) {
         </div>
         <Link
           href={`/${lang}/movies/${movie.id}`}
+          scroll={false}
           className="bg-primary rounded-lg py-2 px-5 flex items-center justify-center gap-2 text-[#171923] font-semibold text-sm"
         >
           <Image height={20} width={20} src="/assets/tag.svg" alt="icon" />
