@@ -1,9 +1,8 @@
 import { NextResponse } from "next/server";
-import { getMoviesById } from "@/lib/data";
 import { movieList } from "@/lib/data";
 export async function GET(req, { params }) {
   const movieId = params?.id;
-  const data = getMoviesById(movieId);
+  const data = movieList.results.find((movie) => movie.id == movieId);
   if (!data) {
     return new Response("Movie not found", { status: 404 });
   }

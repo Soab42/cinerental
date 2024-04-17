@@ -1,7 +1,7 @@
 import { NextResponse } from "next/server";
-import { getAllMovies } from "@/lib/data";
+import { movieList } from "@/lib/data";
 
 export async function GET() {
-  const data = getAllMovies();
+  const data = movieList.results;
   return NextResponse.json(data);
 }
